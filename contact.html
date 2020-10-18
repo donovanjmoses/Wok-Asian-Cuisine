@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang= "en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width= device-width, initial-scale=1.0">
+        <title>Wok Asian Cuisine</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <!--[if lt IE 9]>     <script src="html5shiv.js"></script> <![endif]-->
+        <!--Donovan Moses-->
+    </head>
+    <body>
+       <!--Begins wrapper-->
+       <div id="wrapper">
+        <!--Header-->
+        <header>
+            <h1>WOK ASIAN CUISINE</h1>
+        </header>
+        <!--Navigation-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Our Menu</a></li>
+                <li><a href="order.html">Order Now</a></li>
+                <li><a href="contact.html" class="activePage">Contact Us</a></li>
+            </ul>
+        </nav>
+        <!--Main content-->
+        <main>
+            <section id="contact">
+                <!--<img src="contact-img-optional2.jpg" id="contact-image" alt="Wok Asian Cuisine Entree">-->
+                <div id="contact-image">
+                    <h2>Contact Us</h2><br><br>
+                    <p>Do you have dietary concerns? Questions about an upcoming event? Drop us a line, and we'll get back to you soon!</p><br><br><br><hr>
+                </div>
+                <div id="form-container">
+                    <form method="post" action="http://webdevbasics.net/scripts/demo.php">
+                        <label for="myName">*Name: </label>
+                        <input type="text" name="myName" id="myName" required="required">
+
+                        <label for="myAddress">Address:</label>
+                        <input type="text" name="myAddress" id="myAddress">
+
+                        <label for="myCity">City:</label>
+                        <input type="text" name="myCity" id="myCity">
+
+                        <label for="myState">State:</label>
+                        <select size="1" name="myState" id="myState">
+                            <option>Select your State</option>
+                            <option value="AL">Alabama</option>
+                            <option value="AK">Alaska</option>
+                            <option value="AZ">Arizona</option>
+                            <option value="AR">Arkansas</option>
+                            <option value="CA">California</option>
+                            <option value="CO">Colorado</option>
+                            <option value="CT">Connecticut</option>
+                            <option value="DE">Delaware</option>
+                            <option value="DC">District Of Columbia</option>
+                            <option value="FL">Florida</option>
+                            <option value="GA">Georgia</option>
+                            <option value="HI">Hawaii</option>
+                            <option value="ID">Idaho</option>
+                            <option value="IL">Illinois</option>
+                            <option value="IN">Indiana</option>
+                            <option value="IA">Iowa</option>
+                            <option value="KS">Kansas</option>
+                            <option value="KY">Kentucky</option>
+                            <option value="LA">Louisiana</option>
+                            <option value="ME">Maine</option>
+                            <option value="MD">Maryland</option>
+                            <option value="MA">Massachusetts</option>
+                            <option value="MI">Michigan</option>
+                            <option value="MN">Minnesota</option>
+                            <option value="MS">Mississippi</option>
+                            <option value="MO">Missouri</option>
+                            <option value="MT">Montana</option>
+                            <option value="NE">Nebraska</option>
+                            <option value="NV">Nevada</option>
+                            <option value="NH">New Hampshire</option>
+                            <option value="NJ">New Jersey</option>
+                            <option value="NM">New Mexico</option>
+                            <option value="NY">New York</option>
+                            <option value="NC">North Carolina</option>
+                            <option value="ND">North Dakota</option>
+                            <option value="OH">Ohio</option>
+                            <option value="OK">Oklahoma</option>
+                            <option value="OR">Oregon</option>
+                            <option value="PA">Pennsylvania</option>
+                            <option value="RI">Rhode Island</option>
+                            <option value="SC">South Carolina</option>
+                            <option value="SD">South Dakota</option>
+                            <option value="TN">Tennessee</option>
+                            <option value="TX">Texas</option>
+                            <option value="UT">Utah</option>
+                            <option value="VT">Vermont</option>
+                            <option value="VA">Virginia</option>
+                            <option value="WA">Washington</option>
+                            <option value="WV">West Virginia</option>
+                            <option value="WI">Wisconsin</option>
+                            <option value="WY">Wyoming</option>
+                          </select>
+
+                        <label for="myEmail">*Email: </label>
+                        <input type="email" name="myEmail" id="myEmail" required="required">
+
+                        <label for="myPhone">*Phone:</label>
+                        <input type="tel" name="myPhone" id="myPhone" required="required">
+
+                        <label for="myComments">Comments: </label>
+                        <textarea name="myComments" id="myComments" cols="43" rows="5"></textarea>
+
+                            <label for="myContactMethodOne">Preffered Method of Contact?</label>
+                            <input type="radio" name="myContactMethodOne" class="myContactMethodOne" value="Email"><span class="radio-options">Email</span>
+                            <input type="radio" name="myContactMethodOne" class="myContactMethodOne" value="Phone"><span class="radio-options">Phone</span>
+                                                
+                        <input type="reset" id="myReset" value="Reset">
+
+                        <input type="submit" id="mySubmit" value="Submit">
+                    </form>
+                </div>
+            </section>
+        </main>
+        <!--Footer-->
+        <footer>
+            Wok Asian Cuisine<br>Copyright &copy; 2020 Wok - All Rights Reserved.<br>This site is for educational purposes only.
+        </footer>
+        </div> <!--closes wrapper-->
+        <script src = "modernizr.min.js"></script>
+    </body>
+</html>
