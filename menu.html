@@ -15,7 +15,6 @@
             <!--Header-->
             <header>
                 <h1>WOK ASIAN CUISINE</h1>
-                <p>Awesome content coming soon</p>
             </header>
             <!--Navigation-->
             <nav>
@@ -26,10 +25,45 @@
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </nav>
+            <br><br>
+            <h3 id ="menu-h3">Customize your order!</h3>
+            <h4 id = "menu-h4">Please specify how many servings of each item you would like with your order:</h4>
+            <form method="post" action="http://webdevbasics.net/scripts/demo.php">
+                <label for="myName">*Name: </label>
+                <input type="text" name="myName" id="myName" required="required">
+
+                <label for="myPhone">*Phone:</label>
+                <input type="tel" name="myPhone" id="myPhone" required="required">
+
+                <label for="loMein">LoMein:</label>
+                <input type="number" id = "loMein" name="wokItem" id="loMein" value="">
+
+                <label for="rice">Rice:</label>
+                <input type="number" id = "rice" name="wokItem" id="rice">
+
+                <label for="generalTsoChicken">General Tso Chicken: </label>
+                <input type="number" id = "generalTsoChicken" name="wokItem" id="generalTsoChicken">
+
+                <label for="teryakiBeef">Teryaki Beef: </label>
+                <input type="number" id = "teryakiBeef" name="wokItem" id="teryakiBeef">
+
+                <label for="myComments">Special requests for your order: </label>
+                <textarea name="myComments" id="myComments" cols="43" rows="5"></textarea>
+                <br><br>
+
+                <p>Total Items in Order: <span id = "totalItems"></span></p>
+                <p>Subtotal: $ <span id = "subTotal"></span></p>
+                                        
+                <input type="reset" id="myReset" value="Reset">
+
+                <input type="submit" id="mySubmit" value="Submit">
+
+            </form>
             <!--Footer-->
             <br><br><br><br><br><br><br><br><br><br>
             <footer>Wok Asian Cuisine<br>Copyright &copy; 2020 Wok - All Rights Reserved.<br>This site is for educational purposes only.</footer>
         </div> <!--closes wrapper-->
+        <script src = "index.js"></script>
         <script src = "modernizr.min.js"></script>
     </body>
 </html>

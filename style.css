@@ -36,6 +36,14 @@ header {
     font-size: 20px;
 }
 
+#menu-h3 {
+    text-align: center;
+}
+
+#menu-h4 {
+    text-align: center;
+}
+
 #header-image {
     padding: 0;
     display: block;
