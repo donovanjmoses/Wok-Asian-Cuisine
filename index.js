@@ -19,7 +19,16 @@ function calculateItems() {
         if(parseInt(arr[i].value))
             tot += parseInt(arr[i].value);
     }
+    if (tot < 5 || tot > 5) {
     totalItems.innerHTML = tot;
+        if (tot > 5) {
+            totalItems.innerHTML += "</br>(Free Wok The Line Boba Tea (1)"
+        }
+    } else {
+        totalItems.innerHTML = tot;
+        alert("Congratulations! You have received a free Wok The Line Boba Tea for ordering 5 items with us today!");
+        totalItems.innerHTML += "</br>(Free Wok The Line Boba Tea (1)"
+    }
 }
 
 // This function collects the sum of the number of items ordered
