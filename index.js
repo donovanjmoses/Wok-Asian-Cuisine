@@ -19,6 +19,9 @@ function calculateItems() {
         if(parseInt(arr[i].value))
             tot += parseInt(arr[i].value);
     }
+    // This nested decision statement informs the user that they have
+    // received a free item and adds the free item to their checkout
+    // if they have ordered a minimum of 5 items
     if (tot < 5 || tot > 5) {
     totalItems.innerHTML = tot;
         if (tot > 5) {
